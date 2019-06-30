@@ -1,0 +1,19 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: dotnet pack -c Release -o '$(Build.ArtifactStagingDirectory)' './markdown-to-html/markdown-to-html.csproj'
+  displayName: 'dotNet pack'
+
+- task: PublishBuildArtifacts@1
+
+# - task: NuGetCommand@2
+#   displayName: 'NuGet push'
+#   inputs:
+#     command: 'push'
+#     packagesToPush: '$(Build.ArtifactStagingDirectory)'
+#     nuGetFeedType: 'NuGet.org'
+#     publishVstsFeed: '/4b70e727-9628-4ea7-8211-aeeb18af8aee'
