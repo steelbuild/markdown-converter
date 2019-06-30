@@ -5,4 +5,8 @@
     <RootNamespace>markdown_to_html</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="0.17.0" />
+  </ItemGroup>
+
 </Project>
