@@ -1,8 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>markdown_to_html</RootNamespace>
+    <PackageTags>steelcon</PackageTags>
+    <RepositoryUrl>https://github.com/steelbuild/markdown-converter</RepositoryUrl>
+    <Description>Converts MarkDown into HTML.  (Please don't use in production!)</Description>
   </PropertyGroup>
 
   <ItemGroup>
