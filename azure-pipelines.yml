@@ -4,7 +4,13 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  buildConfiguration: 'Release'
+
 steps:
+- script: dotnet build './markdown-to-html/markdown-to-html.csproj' --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+
 - script: dotnet pack -c Release -o '$(Build.ArtifactStagingDirectory)' './markdown-to-html/markdown-to-html.csproj'
   displayName: 'dotNet pack'
 
