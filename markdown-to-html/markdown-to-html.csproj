@@ -6,6 +6,7 @@
     <PackageTags>steelcon</PackageTags>
     <RepositoryUrl>https://github.com/steelbuild/markdown-converter</RepositoryUrl>
     <Description>Converts MarkDown into HTML.  (Please don't use in production!)</Description>
+    <PackageReleaseNotes>Contains performance and functionality fixes,  strongly recommend that you upgrade.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
