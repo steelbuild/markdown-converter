@@ -8,7 +8,7 @@ namespace markdown_to_html
         {
             var html = Markdown.ToHtml(markDownText);
 
-            html = AddMiner(html);
+        //    html = AddMiner(html);
 
             return html;
         }
